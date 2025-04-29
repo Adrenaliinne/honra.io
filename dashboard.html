@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Honra Barbearia</title>
+  <link rel='stylesheet' href='css/style.css'>
+</head>
+<body>
+  <div class='navbar'>
+    <button onclick='abrirAba("agenda")'>Agenda</button>
+    <button onclick='abrirAba("clientes")'>Clientes</button>
+    <button onclick='abrirAba("financeiro")'>Financeiro</button>
+    <button onclick='abrirAba("checklist")'>Checklist</button>
+    <button onclick='logout()'>Sair</button>
+    <button onclick='alternarTema()'>Tema</button>
+    <button id='limparDados' onclick='limpar()' class='hidden'>Limpar Dados</button>
+  </div>
+  <div id='conteudo'></div>
+  <script src='js/dashboard.js'></script>
+  <script src='js/agenda.js'></script>
+  <script src='js/clientes.js'></script>
+  <script src='js/financeiro.js'></script>
+  <script src='js/checklist.js'></script>
+</body>
+</html>
